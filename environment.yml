@@ -1,0 +1,6 @@
+name: taskboard_eval
+dependencies:
+  - python
+  - numpy
+  - pytorch
+  - opencv

@@ -1,0 +1,13 @@
+Peter Gavriel
+Task Board Evaluation Notes
+
+As Reza has said, the problem will eventually evolve into a multi-class classification problem, but there should be a groundwork that can be laid down that should be able to determine a score of 0 or 2 for each component in a relatively straightforward manner.
+Assuming we have a robust and reliable way of collecting regular taskboard images, initial setup could be as simple as:
+1. Run a setup script that: Verifies that the taskboard detection is working, and on user input, will take a snapshot of an empty taskboard, and a full taskboard.
+2. An evaluation script should be able to take the empty and full image, and be able to attempt to evaluate each component of a new image using the component csv file.
+The output of this extremely rudimentary evaluation should be extendable by a more sophisticated layer.
+
+
+1. Find the difference between an empty board and a full board
+2. Find the difference between a new image and a full Board
+3. Find the difference between the differences
